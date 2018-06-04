@@ -8,9 +8,9 @@ function getData() {
 }
 
 function displayResult(array) {
-  for(i = 0; i < array.length; i++) {
-    $("#allResults").append("<li class='listItem'>" + array[i] + "</li>");
-  }
+  array.forEach(function(result) {
+    $("#allResults").append("<li class='listItem'>" + result + "</li>");
+  });
 }
 
 $(document).ready(function() {
